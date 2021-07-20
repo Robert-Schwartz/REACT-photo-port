@@ -7,17 +7,19 @@ import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 
-// Configure the Testing Environment
-
 afterEach(cleanup);
 //This will ensure that after each test, we won't have any leftover memory data that could give us false results.
 
 // declare the component we're testing
 describe('About component', () => {
-    // First Test
-    test ('renders', () => {
+    //first test
+    test('renders', () => {
         render(<About />);
     });
+    // second test
+    test('matches snapshot DOM node structure', () => {
+        const { asFragment } = render(<About />);
 
-    // Second Test
+        expect(asFragment()).toMatchSnapshot();
+    });
 })
