@@ -1,5 +1,7 @@
 // Import React
 import React from 'react';
+
+
 // Import image
 import coverImage from "../../assets/cover/cover-image.jpg";
 

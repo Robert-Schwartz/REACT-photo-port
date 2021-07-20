@@ -1,14 +1,17 @@
-// Import React in every component file
+// Import React in every file
 import React from 'react';
 
-// Import Components
+// Import components
+import Nav from './components/Nav';
 import About from './components/About';
 
-// App function
-// ====================================
 function App() {
   return (
     <div>
+      <Nav></Nav>
+      <main>
+        <About></About>
+      </main>
     </div>
   );
 }
