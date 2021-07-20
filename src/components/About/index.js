@@ -1,8 +1,6 @@
-// Import React
-import React from 'react';
+import React from 'react'
 
-
-// Import image
+// Import Image
 import coverImage from "../../assets/cover/cover-image.jpg";
 
 function About() {
