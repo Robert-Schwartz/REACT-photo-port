@@ -3,6 +3,23 @@ import React from 'react';
 
 // Nav Component
 function Nav() {
+    const categories = [
+        {
+            name: "commercial",
+            description:
+                "Photos of grocery stores, food trucks, and other commercial projects",
+        },
+        { name: "portraits", description: "Portraits of people in my life" },
+        { name: "food", description: "Delicious delicacies" },
+        {
+            name: "landscape",
+            description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+        },
+    ];
+    // select category function
+    function categorySelected(name) {
+        console.log(`${name} clicked`)
+    };
     return (
         <header>
             <h2>
@@ -20,6 +37,17 @@ function Nav() {
                     <li>
                         <span>Contact</span>
                     </li>
+                    {categories.map((category) => (
+                        <li
+                            className="mx-1"
+                            key={category.name}
+                        /* Whenever we map over anything in JSX, the outermost element must have a key attribute that's set to be something unique. This helps React keep track of items in the virtual DOM.*/
+                        >
+                            <span onClick={() => categorySelected(category.name)} >
+                                {category.name}
+                            </span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
