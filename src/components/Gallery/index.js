@@ -1,10 +1,3 @@
-import React from 'react';
-// import helper function for Capitalize First Letter
-import { capitalizeFirstLetter } from '../../utils/helpers';
-// import photo
-import photo from "../../assets/small/commercial/0.jpg";
-
-
 // Gallery Component
 import React from 'react';
 import PhotoList from '../PhotoList';
