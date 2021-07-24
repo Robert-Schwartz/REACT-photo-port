@@ -1,3 +1,20 @@
+# Oh Snap!
+GitHub Repo: [https://github.com/Robert-Schwartz/REACT-photo-port](https://github.com/Robert-Schwartz/REACT-photo-port) <br>
+
+Deployed at: [https://robert-schwartz.github.io/REACT-photo-port/](https://robert-schwartz.github.io/REACT-photo-port/) <br>
+## Description
+A single-page application called Oh Snap! that uses React state, props, Hooks, and reusable UI components to provide a simple yet sleek platform for showing off a Photographer's skills.
+
+![image](preview.png)
+
+## Contributions
+Developed by Robert Schwartz, 2021
+
+## Contact
+Contact me with any questions
+- Github Profile: (https://github.com/Robert-Schwartz)
+- E-mail me: bschwartz23@gmail.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
