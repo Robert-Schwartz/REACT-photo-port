@@ -10,13 +10,17 @@ function ContactForm() {
         setFormState({ ...formState, [e.target.name]: e.target.value })
     }
 
-    console.log(formState);
+    // Submit the Form Data
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+    }
 
     //create the form DOM elements
     return (
         <section>
             <h1>Contact me</h1>
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" defaultValue={name} onChange={handleChange} name="name" />
